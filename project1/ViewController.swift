@@ -22,6 +22,11 @@ class ViewController: UIViewController {
         counterText.text = String(counter)
         super.viewDidLoad()
     }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
    
     @IBAction func resetTouch(_ sender: Any) {
         timer.invalidate()
